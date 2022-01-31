@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Happening Weather</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <h1 class="w-100 text-center text-black">~ Happening Weather Dashboard ~</h1>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 searchEL m-1 rounded">
+                <h3>Search for a City:</h3>
+                <input class="city-input w-100 my-4" type="text" placeholder="Enter a city name..."></input>
+                <button class="btn btn-dark w-100 mb-4 search-btn" type="button">Search</button>
+                <button class="btn btn-dark w-100 clear-btn" type="button">Clear</button>
+                <hr class="break">
+                <div class="city-history"></div>
+            </div>
+            <div class="col-8 m-3">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3 class="city-name mt-4"></h3>
+                            </div>
+                            <div class="col-6 currentWeather"></div>
+                        </div>
+                    </div>
+                    <div class="temperature m-1"></div>
+                    <div class="wind m-1"></div>
+                    <div class="humidity m-1"></div>
+                    <div class="uv m-1"></div>
+                    <div class="row">
+                        <div class="col-12 m-3">
+                            <h5>5-Day Forecast:</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col bg-dark text-white m-1 rounded future-forecast"></div>
+                        <div class="col bg-dark text-white m-1 rounded future-forecast"></div>
+                        <div class="col bg-dark text-white m-1 rounded future-forecast"></div>
+                        <div class="col bg-dark text-white m-1 rounded future-forecast"></div>
+                        <div class="col bg-dark text-white m-1 rounded future-forecast"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
