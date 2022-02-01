@@ -8,7 +8,6 @@ let today = moment();
 let date = today.format("dddd, MMMM Do, YYYY");
 
 
-
 searchButton.on("click", function (event) {
   event.preventDefault();
   city = $("#userInput").val();
@@ -48,7 +47,6 @@ function cityCall(city) {
       $("#weather-data").append(`<li>Wind: ${data.wind.speed} KM/H</li>`);
       $("#weather-data").append(`<li>Humidity: ${data.main.humidity}%</li>`);
       forecast = `https://api.openweathermap.org/data/2.5/onecall?lat=${data.coord.lat}&lon=${data.coord.lon}&units=metric&appid=${apiKey}`;
-
    
 
       fetch(forecast)
