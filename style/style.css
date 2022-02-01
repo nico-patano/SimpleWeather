@@ -1,0 +1,26 @@
+#citysearch {
+    font-size: larger;
+    padding-left: 5%;
+    padding-top: 5%;
+    font-weight: bold;
+}
+
+form {
+    padding-left: 5%;
+    padding-top: 5%;
+    
+}
+
+ul {
+    list-style-type: none;
+   
+  }
+
+header {
+    padding-bottom: 5%;
+    
+}
+
+#title {
+    font-size: 300%;
+}
